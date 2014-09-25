@@ -84,7 +84,9 @@ def run_demo():
     plot_hist(demo_file, height=35.0, bincount=40)
 
 
-def plot_hist(f, height=20.0, bincount=None, binwidth=None, pch="o", colour="default", title="", xlab=None, showSummary=False, regular=False):
+def plot_hist(f, height=20.0, bincount=None, binwidth=None, pch="o",
+              colour="default", title="", xlab=None, showSummary=False,
+              regular=False):
     """
     Make a histogram
 
