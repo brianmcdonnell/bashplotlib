@@ -10,7 +10,7 @@ import sys
 import math
 import optparse
 from os.path import dirname
-from .utils.helpers import *
+from .utils.helpers import isiterable, drange, box_text, printcolour, colour_help
 from .utils.commandhelp import hist
 
 
