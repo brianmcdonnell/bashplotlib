@@ -55,7 +55,7 @@ def run_demo():
         sys.stderr.write("run the downloaddata.sh script in the example first\n")
         sys.exit(1)
 
-    #plotting a histogram
+    # plotting a histogram
     print "plotting a basic histogram"
     print "plot_hist('%s')" % demo_file
     print "hist -f %s" % demo_file
@@ -63,21 +63,21 @@ def run_demo():
     plot_hist(demo_file)
     print "*" * 80
 
-    #with colours
+    # with colours
     print "histogram with colours"
     print "plot_hist('%s', colour='blue')" % demo_file
     print "hist -f %s -c blue" % demo_file
     plot_hist(demo_file, colour='blue')
     print "*" * 80
 
-    #changing the shape of the point
+    # changing the shape of the point
     print "changing the shape of the bars"
     print "plot_hist('%s', pch='.')" % demo_file
     print "hist -f %s -p ." % demo_file
     plot_hist(demo_file, pch='.')
     print "*" * 80
 
-    #changing the size of the plot
+    # changing the size of the plot
     print "changing the size of the plot"
     print "plot_hist('%s', height=35.0, bincount=40)" % demo_file
     print "hist -f %s -s 35.0 -b 40" % demo_file
