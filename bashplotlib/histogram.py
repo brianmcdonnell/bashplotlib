@@ -10,7 +10,8 @@ import sys
 import math
 import optparse
 from os.path import dirname
-from .utils.helpers import isiterable, drange, box_text, printcolour, colour_help
+from .utils.helpers import (isiterable, drange, box_text,
+                            printcolour, colour_help)
 from .utils.commandhelp import hist
 
 
@@ -52,7 +53,8 @@ def run_demo():
 
     if not os.path.isfile(demo_file):
         sys.stderr.write("demo input file not found!\n")
-        sys.stderr.write("run the downloaddata.sh script in the example first\n")
+        sys.stderr.write("run the downloaddata.sh script \
+in the example first\n")
         sys.exit(1)
 
     # plotting a histogram
@@ -230,7 +232,8 @@ def main():
     if opts.demo:
         run_demo()
     elif opts.f:
-        plot_hist(opts.f, opts.h, opts.b, opts.binwidth, opts.p, opts.colour, opts.t, opts.x, opts.showSummary, opts.regular)
+        plot_hist(opts.f, opts.h, opts.b, opts.binwidth, opts.p, opts.colour,
+                  opts.t, opts.x, opts.showSummary, opts.regular)
     else:
         print "nothing to plot!"
 
